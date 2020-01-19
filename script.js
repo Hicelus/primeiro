@@ -1,9 +1,14 @@
+//atribuição de elemento
 var botao = document.getElementById("botao");
+//clique
 botao.onclick = function(){testar()};
 
 var texto = document.getElementById("paragrafo");
+//clique duplo
 texto.ondblclick = function(){teste2click()};
+//cursor entra no objeto
 texto.onmouseover = function(){entra()};
+//cursor sai do objeto
 texto.onmouseout = function(){sai()};
 
 function testar(){
