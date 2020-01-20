@@ -10,6 +10,10 @@ texto.ondblclick = function(){teste2click()};
 texto.onmouseover = function(){entra()};
 //cursor sai do objeto
 texto.onmouseout = function(){sai()};
+//cursor pressionado
+texto.onmousedown = function(){clica()};
+//cursor despressionado
+texto.onmouseup = function(){desclica()}
 
 function testar(){
     document.getElementById("titulo").innerHTML = "1 Testado";
@@ -25,4 +29,12 @@ function entra(){
 
 function sai(){
     botao.innerHTML = "Teste";
+}
+
+function clica(){
+    document.getElementById("titulo").innerHTML = "Clicando";
+}
+
+function desclica(){
+    document.getElementById("titulo").innerHTML = "Desclicado";
 }
