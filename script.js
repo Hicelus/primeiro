@@ -1,7 +1,7 @@
 //atribuição de elemento
 var botao = document.getElementById("botao");
 //clique
-botao.onclick = function(){testar()};
+botao.onclick = function(){listaNomes()};
 
 var texto = document.getElementById("paragrafo");
 //clique duplo
@@ -37,4 +37,21 @@ function clica(){
 
 function desclica(){
     document.getElementById("titulo").innerHTML = "Desclicado";
+}
+
+//------------------------------------------------------------------------------------
+
+var aluno1 = new aluno("Gustavo", 23, 123456);
+var aluno2 = new aluno("Henrique", 26, 98765);
+
+function aluno(n, i, r){
+    this.nome = n;
+    this.idade = i;
+    this.ra = r;
+}
+
+var lista = [aluno1, aluno2];
+
+function listaNomes(){
+    document.write(lista[0].ra);    
 }
